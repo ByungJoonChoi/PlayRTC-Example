@@ -1,5 +1,6 @@
 //Create an account on Firebase, and use the credentials they give you in place of the following
-var config = {
+document.addEventListener("DOMContentLoaded", function(){
+  var config = {
  apiKey: "AIzaSyAewTR7oYq4Yx_8ny59p7prqC0tovB7wLY",
  authDomain: "rtcdemian.firebaseapp.com",
  databaseURL: "https://rtcdemian.firebaseio.com",
@@ -53,3 +54,5 @@ function showFriendsFace() {
     .then(offer => pc.setLocalDescription(offer) )
     .then(() => sendMessage(yourId, JSON.stringify({'sdp': pc.localDescription})) );
 }
+});
+
