@@ -55,7 +55,10 @@ function showFriendsFace() {
     .then(offer => pc.setLocalDescription(offer) )
     .then(() => sendMessage(yourId, JSON.stringify({'sdp': pc.localDescription})) );
 }
-  btnCall.addEventListener("click", showFriendsFace);
+  
+btnCall.addEventListener("click", function(){
+  showFriendsFace();
+});
   
   showMyFace();
 });
