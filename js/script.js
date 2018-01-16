@@ -57,6 +57,7 @@ function showFriendsFace() {
 }
   
 btnCall.addEventListener("click", function(){
+  console.log("click");
   showFriendsFace();
 });
   
